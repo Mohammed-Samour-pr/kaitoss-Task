@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/s', function () {
+    return view('controlPanel.theme.stamp');
+});
+
+
 Route::get('/', function () {
     return view('index');
 });
