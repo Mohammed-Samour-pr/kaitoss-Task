@@ -18,9 +18,6 @@ return new class extends Migration {
             $table->string('phone')->nullable();
             $table->string('Address');
             $table->string('Schedule');
-            $table->text('description_about');
-            $table->text('description_services');
-            $table->text('description_blog');
             $table->timestamps();
         });
     }
