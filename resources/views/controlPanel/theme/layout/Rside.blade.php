@@ -77,7 +77,7 @@
 
                         <!--begin::main section-->
                         <div class="menu-item">
-                            <a class="menu-link" href="{{url('')}}">
+                            <a class="menu-link" href="{{url('minsection')}}">
                                                 <span class="menu-icon">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
                                                 <span class="svg-icon svg-icon-2">
@@ -103,7 +103,7 @@
 
                         <!--begin::about-->
                         <div class="menu-item">
-                            <a class="menu-link" href="{{url('')}}">
+                            <a class="menu-link" href="{{url('aboutus')}}">
                                                 <span class="menu-icon">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
                                                 <span class="svg-icon svg-icon-2">
@@ -129,7 +129,7 @@
 
                         <!--begin::Services-->
                         <div class="menu-item">
-                            <a class="menu-link" href="{{url('')}}">
+                            <a class="menu-link" href="{{url('services')}}">
                                                 <span class="menu-icon">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
                                                 <span class="svg-icon svg-icon-2">
@@ -155,7 +155,7 @@
 
                         <!--begin::blog-->
                         <div class="menu-item">
-                            <a class="menu-link" href="{{url('')}}">
+                            <a class="menu-link" href="{{url('blog')}}">
                                                 <span class="menu-icon">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
                                                 <span class="svg-icon svg-icon-2">
@@ -180,7 +180,7 @@
 
                         <!--begin::Contact us-->
                         <div class="menu-item">
-                            <a class="menu-link" href="{{url('')}}">
+                            <a class="menu-link" href="{{url('contact')}}">
                                                 <span class="menu-icon">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
                                                 <span class="svg-icon svg-icon-2">

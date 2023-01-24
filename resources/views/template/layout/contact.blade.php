@@ -11,8 +11,8 @@
                                 </div>
                                 <div class="contact-content">
                                     <h4>Contact</h4>
-                                    <p>0984537278623</p>
-                                    <p>yourmail@gmail.com</p>
+                                    <p>{{ $data['settings']->phone }}</p>
+                                    <p>{{ $data['settings']->email }}</p>
                                 </div>
                             </div>
                         </div>
@@ -23,8 +23,8 @@
                                 </div>
                                 <div class="contact-content">
                                     <h4>Address</h4>
-                                    <p>175 5th Ave, New York, NY 10010</p>
-                                    <p>United States</p>
+                                    <p>{{ $data['settings']->Address }}</p>
+
                                 </div>
                             </div>
                         </div>
@@ -35,8 +35,8 @@
                                 </div>
                                 <div class="contact-content">
                                     <h4>Schedule</h4>
-                                    <p>24 Hours / 7 Days Open</p>
-                                    <p>Office time: 10 AM - 5:30 PM</p>
+                                    <p>{{ $data['settings']->Schedule }}</p>
+
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,19 @@
                             </div>
                         </div>
                     </div>
-                    <form action="#" class="contact-form">
+
+                    @if (session()->has('Add'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>{{ session()->get('Add') }}</strong>
+                            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+
+                    <form action="{{@url('addcontact')}}" class="contact-form" method="post"
+                          enctype="multipart/form-data">
+                        {{csrf_field()}}
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" name="name" id="name" placeholder="Name" required/>

@@ -3,14 +3,14 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="header-content">
-                    <h1>Corporate & Business Site Template by Ayro UI.</h1>
+                    <h1>{{ $data['minsection']->title }}
+                    </h1>
                     <p>
-                        We are a digital agency that helps brands to achieve their
-                        business outcomes. We see technology as a tool to create amazing
-                        things.
+                        {{ $data['minsection']->description }}
+
                     </p>
                     <div class="button">
-                        <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                        <a href="{{ $data['minsection']->video_link }}"
                            class="glightbox video-button">
                 <span class="btn icon-btn rounded-full">
                   <i class="lni lni-play"></i>
@@ -22,7 +22,8 @@
             </div>
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="header-image">
-                    <img src="assets_index/images/header/hero-image.jpg" alt="#"/>
+                    <img src="img_minsection/{{ $data['minsection']->image }}
+                        " alt="#"/>
                 </div>
             </div>
         </div>

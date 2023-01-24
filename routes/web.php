@@ -13,11 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/s', function () {
-    return view('controlPanel.theme.stamp');
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::post('addcontact', [App\Http\Controllers\ContactusController::class, 'store']);
+
+
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::controller(\App\Http\Controllers\MinsectionController::class)->group(function () {
+        Route::get('minsection', 'index');
+        Route::put('update', 'update');
+    });
+
+    Route::controller(\App\Http\Controllers\AboutusController::class)->group(function () {
+        Route::get('aboutus', 'index');
+        Route::put('updateaboutus', 'update');
+    });
+
+
+    Route::resource('services', 'App\Http\Controllers\ServicesController');
+    Route::resource('blog', 'App\Http\Controllers\BlogController');
+    Route::resource('contact', 'App\Http\Controllers\ContactusController');
+    Route::resource('setting', 'App\Http\Controllers\SettingsController');
 });
 
 
-Route::get('/', function () {
-    return view('index');
-});
+
+
+Auth::routes(['register' => false]);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

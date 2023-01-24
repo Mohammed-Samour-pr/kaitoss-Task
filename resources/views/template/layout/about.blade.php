@@ -115,41 +115,17 @@
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-who" role="tabpanel"
                                  aria-labelledby="nav-who-tab">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page
-                                    when
-                                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                                    normal
-                                    distribution of letters, look like readable English.</p>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    in some
-                                    form,
-                                    by injected humour.</p>
+                                {{ $data['aboutus']->about_us }}</p>
+
                             </div>
                             <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page
-                                    when
-                                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                                    normal
-                                    distribution of letters, look like readable English.</p>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    in some
-                                    form,
-                                    by injected humour.</p>
+                                <p>{{ $data['aboutus']->Vision }}</p>
+
                             </div>
                             <div class="tab-pane fade" id="nav-history" role="tabpanel"
                                  aria-labelledby="nav-history-tab">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page
-                                    when
-                                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                                    normal
-                                    distribution of letters, look like readable English.</p>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    in some
-                                    form,
-                                    by injected humour.</p>
+                                <p>{{ $data['aboutus']->History }}</p>
+
                             </div>
                         </div>
                     </div>

@@ -24,9 +24,9 @@
 <!-- End Latest News Area -->
 
 
-<!-- ========================= contact-section start ========================= -->
+<!--  contact-section start  -->
 @include('template.layout.contact')
-<!-- ========================= contact-section end ========================= -->
+<!-- contact-section end -->
 
 <!-- Start Footer Area -->
 @include('template.layout.footer')
